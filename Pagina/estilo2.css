@@ -1,0 +1,92 @@
+/* Imagen de fondo para ambas páginas */
+body {
+    background: url('./imagenes/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado y navegación */
+header {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+    border-bottom: 2px solid #00ff99;
+    box-shadow: 0 4px 8px rgba(255, 0, 255, 0.3);
+}
+
+header h1 {
+    color: #00ff99;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #00ff99;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    transition: color 0.2s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    color: #ff00ff;
+    transform: scale(1.1);
+}
+
+/* Sección de productos */
+.products {
+    padding: 2rem;
+    margin: 2rem auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    border: 2px solid #00ff99;
+    box-shadow: 0 4px 8px rgba(255, 0, 255, 0.3);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.products h3 {
+    color: #ff00ff;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+.product {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.product h4 {
+    color: #00ff99;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.product p {
+    color: #fff;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
